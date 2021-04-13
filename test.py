@@ -96,6 +96,9 @@ class RefModTest(unittest.TestCase):
                      'https://www.example.com/'),
             testlink('http://site.y.test/page/', 'http://www.y.test/page/',
                      None),
+            # repeated to make page scripts run as quickly as possible
+            testlink('http://site.y.test/page/', 'http://www.y.test/page/',
+                     None),
         ]
 
         for link in tests:
